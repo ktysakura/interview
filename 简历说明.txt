@@ -11,6 +11,7 @@ zeromq api 使用
 protocol buf api 使用
 
 
+
 lua和C互调都是通过lua虚拟机提供的虚拟栈
 lua->C： 首先实现固定的C函数接口，获取接口上lua_state栈中的传入参数，再进行逻辑后,将处理结果压入栈中，返回给lua。最后把函数指针注册到lua的全局表中，再编译成动态库，
 lua requrie "库名"，就可以开始调用接口
